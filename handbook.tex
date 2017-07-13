@@ -1,0 +1,61 @@
+\documentclass[a5paper,DIV=calc,parskip=half]{scrbook}
+\title{Handbook of Truth}
+\author{IT-Syndikat}
+\date{\today}
+
+% Fixes
+\usepackage{scrhack}
+
+% Title
+\usepackage{titling}
+\pretitle{\begin{center}\includegraphics{gfx/its_logo.pdf}\LARGE\\[5em]}
+\posttitle{\end{center}}
+
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+
+% Unicode Support
+\usepackage[utf8]{inputenc}
+
+% Graphics
+\usepackage{graphicx}
+
+% Color
+\usepackage[svgnames]{xcolor}
+\colorlet{linkcolor}{DarkBlue}
+
+% Hyperlinks
+\usepackage[pdfusetitle]{hyperref}
+\hypersetup{colorlinks=true,
+            linkcolor=linkcolor,
+            citecolor=linkcolor,
+            urlcolor=linkcolor}
+
+% References
+\usepackage[capitalise,nameinlink,noabbrev]{cleveref}
+
+% Source Code
+\usepackage{listings}
+\lstset{basicstyle=\footnotesize\ttfamily,
+        breaklines=true,
+        frame=tb,
+        numberstyle=\tiny,
+        showstringspaces=false,
+        xleftmargin=2em}
+
+% Document Specific Packages
+\usepackage{lipsum}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\include{content/introduction}
+
+\backmatter
+
+\end{document}
