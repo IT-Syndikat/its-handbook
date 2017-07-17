@@ -18,6 +18,9 @@
 % Unicode Support
 \usepackage[utf8]{inputenc}
 
+% Text
+\usepackage{seqsplit}
+
 % Graphics
 \usepackage{graphicx}
 
@@ -50,6 +53,14 @@
 
 % Document Specific Packages
 \usepackage{lipsum}
+
+% Document Specific Macros
+\newcommand{\maintainer}[2]{%
+    {\footnotesize%
+        \textbf{Maintainer:} #1
+        \href{mailto:#2}{\texttt{\seqsplit{<#2>}}}
+    }%
+}
 
 \begin{document}
 
