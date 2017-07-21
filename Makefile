@@ -1,4 +1,6 @@
-TEX = latexrun
+TEX      = latexrun
+TEXFLAGS =
+
 SRC = $(wildcard content/*.tex)
 
 .PHONY: all clean
@@ -10,4 +12,4 @@ clean:
 	$(RM) -r latex.out
 
 handbook.pdf: handbook.tex $(SRC)
-	$(TEX) $<
+	$(TEX) $(TEXFLAGS) $<
