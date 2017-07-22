@@ -1,6 +1,23 @@
 % TODO check for copy-paste errors
 % TODO (?) improve typography
 
+% Adjust the spacing values in the following definitions to fit the content on as few pages as possible.
+
+\newcommand{\statutensection}[1]{%
+    \vspace{-2em}%
+    \section*{\small \S{} #1}%
+    \vspace{-1em}%
+}
+
+\SetEnumitemKey{statutenenum}{
+    topsep=-0.8em,
+    partopsep=0.2em,
+    itemsep=-0.32em,
+    parsep=0.5em,
+    leftmargin=2em,
+    labelsep=0.3em,
+}
+
 \chapter{Statuten}
 \label{cha:statuten}
 
@@ -8,9 +25,11 @@ This chapter of the handbook is not translated in order to prevent mistranslatio
 
 \begin{otherlanguage}{german}
 
-\section*{\S\ 1 Name, Size und Tätigkeitsbereich}
+\tiny
 
-\begin{enumerate}
+\statutensection{1 Name, Size und Tätigkeitsbereich}
+
+\begin{enumerate}[statutenenum]
     \item Der Verein führt den Namen: \textit{Verein zur Förderung des freien Zugangs zu technischer Fort- und Weiterbildung jeglicher Art}
 
     \item Er hat seinen Sitz in Innsbruck und erstreckt seine Tätigkeit auf den Tiroler Raum.
@@ -18,13 +37,13 @@ This chapter of the handbook is not translated in order to prevent mistranslatio
     \item Die Errichtung von Zweigvereinen ist nicht beabsichtigt.
 \end{enumerate}
 
-\section*{\S\ 2 Zweck}
+\statutensection{2 Zweck}
 
 Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Errichtung und Erhaltung von Infrastruktur zur Vermittlung, Erarbeitung und Verbreitung technischen Wissens und handwerklicher Faehigkeiten mit Fokus und Schwerpunkt auf den sozialen und politischen Implikationen dieser Inhalte sowie der zur Durchfuehrung solcher Projekte notwendigen Ablaeufe und Vorgehensstrategien.
 
 \textbf{Folgende Handlungs- und Ethischen Richtlinien bilden die Grundlage der Aktionen des Vereins:}
 
-\begin{itemize}
+\begin{itemize}[statutenenum]
     \item Mülle nicht in den Daten anderer Leute.
 
     \item Öffentliche Daten nützen, private Daten schützen.
@@ -41,18 +60,18 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
     \item Technik kann dein Leben zum Besseren verändern.
 \end{itemize}
 
-\section*{\S\ 3 Mittel zur Erreichung des Vereinszwecks}
+\statutensection{3 Mittel zur Erreichung des Vereinszwecks}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Der Vereinszweck soll durch die in den Abs.\ 2 und 3 angeführten ideellen und materiellen Mittel erreicht werden.
 
     \item Als ideelle Mittel dienen
-        \begin{enumerate}
+        \begin{enumerate}[statutenenum]
             \item Vorträge und (Diskussions-)Veranstaltungen Versammlungen gesellige Zusammenkünfte Kulturpflege Informationationsveranstaltungen
         \end{enumerate}
 
     \item Die erforderlichen materiellen Mittel sollen aufgebracht werden durch
-        \begin{enumerate}
+        \begin{enumerate}[statutenenum]
             \item Beitrittsgebühren und Mitgliedsbeiträge
 
             \item Erträgnisse aus Veranstaltungen und vereinseigenen Unternehmungen
@@ -61,9 +80,9 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
         \end{enumerate}
 \end{enumerate}
 
-\section*{\S\ 4 Arten der Mitgliedschaft}
+\statutensection{4 Arten der Mitgliedschaft}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Die Mitglieder des Vereins gliedern sich in ordentliche, außerordentliche und fördernde Mitglieder.
 
     \item Ordentliche Mitglieder sind jene, die sich voll an der Vereinsarbeit beteiligen.
@@ -71,9 +90,9 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
         Fördernde Mitglieder sind jene, die die Vereinstätigkeit durch Geld- oder Sachspenden fördern.
 \end{enumerate}
 
-\section*{\S\ 5 Erwerb der Mitgliedschaft}
+\statutensection{5 Erwerb der Mitgliedschaft}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Mitglieder des Vereins können alle physischen Personen werden.
 
     \item Über die Aufnahme von ordentlichen, außerordentlichen und fördernden Mitgliedern entscheidet die Vollversammlung.
@@ -84,9 +103,9 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
         Wird ein Vorstand erst nach Entstehung des Vereins bestellt, erfolgt auch die (definitive) Aufnahme ordentlicher und außerordentlicher Mitglieder bis dahin durch die Gründer/Gründerinnen des Vereins.
 \end{enumerate}
 
-\section*{\S\ 6 Beendigung der Mitgliedschaft}
+\statutensection{6 Beendigung der Mitgliedschaft}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Die Mitgliedschaft erlischt durch Tod, durch freiwilligen Austritt und durch Ausschluss.
 
     \item Der Austritt kann jederzeit erfolgen.
@@ -96,9 +115,9 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
         Die Verpflichtung zur Zahlung der fällig gewordenen Mitgliedsbeiträge bleibt hiervon unberührt.
 \end{enumerate}
 
-\section*{\S\ 7 Rechte und Pflichten der Mitglieder}
+\statutensection{7 Rechte und Pflichten der Mitglieder}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Die Mitglieder sind berechtigt, an allen Veranstaltungen des Vereins teilzunehmen und die Einrichtungen des Vereins zu beanspruchen.
         Das Stimmrecht in der Voll- und Generalversammlung sowie das aktive und passive Wahlrecht steht allen ordentlichen Mitgliedern zu.
 
@@ -117,17 +136,17 @@ Der Verein, dessen Taetigkeit nicht auf Gewinn gerichtet ist, beyweckt die Erric
         Die ordentlichen und außerordentlichen Mitglieder sind zur pünktlichen Zahlung der Beitrittsgebühr und der Mitgliedsbeiträge in der von der Generalversammlung beschlossenen Höhe verpflichtet.
 \end{enumerate}
 
-\section*{\S\ 8 Vereinsorgane}
+\statutensection{8 Vereinsorgane}
 
 Organe des Vereins sind die Vollversammlung (\S\ 99 und \S\ 10), die Generalversammlung (\S\ 11 und \S\ 12), der Vorstand (\S\S\ 13 bis 15), die Rechnungsprüfer (\S\ 16) und das Schiedsgericht (\S\ 17).
 
-\section*{\S\ 9 Vollversammlung}
+\statutensection{9 Vollversammlung}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Eine Vollversammlung findet regelmäßig statt.
 
     \item Eine Vollversammlung findet auf
-        \begin{enumerate}
+        \begin{enumerate}[statutenenum]
             \item Anforderung eines ordentlichen Mitgliedes
 
             \item Beschluss einer Vollversammlung statt.
@@ -151,26 +170,26 @@ Organe des Vereins sind die Vollversammlung (\S\ 99 und \S\ 10), die Generalvers
     \item Die Beschlussfassungen in der Vollversammlung benötigen die Zustimmung aller abgegebenen gültigen Stimmen.
 \end{enumerate}
 
-\section*{\S\ 10 Aufgaben der Vollversammlung}
+\statutensection{10 Aufgaben der Vollversammlung}
 
 Der Vollversammlung sind folgende Aufgaben vorbehalten:
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item alle den Verein betreffenden Entscheidungen
-        \begin{enumerate}
+        \begin{enumerate}[statutenenum]
             \item Eine Entscheidung der Vollversammlung ist nötig, wenn Projekte im Namen des Vereins durchgeführt oder vom Verein subventioniert werden.
         \end{enumerate}
     \item Aufnahme und Ausschluss von ordentlichen, außerordentlichen und fördernden Mitgliedern.
 \end{enumerate}
 
-\section*{\S\ 11 Generalversammlung}
+\statutensection{11 Generalversammlung}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Die Generalversammlung ist die „Mitgliederversammlung“ im Sinne des Vereinsgesetzes 2002.
         Eine ordentliche Generalversammlung findet jedes Jahr statt.
 
     \item Eine außerordentliche Generalversammlung findet auf
-        \begin{enumerate}
+        \begin{enumerate}[statutenenum]
             \item Beschluss der Vollversammlung oder der ordentlichen Generalversammlung,
 
             \item schriftlichen Antrag von mindestens einem Zehntel der Mitglieder,
@@ -201,15 +220,15 @@ Der Vollversammlung sind folgende Aufgaben vorbehalten:
     \item Die Wahlen und die Beschlussfassungen in der Generalversammlung erfolgen in der Regel mit einfacher Mehrheit der abgegebenen gültigen Stimmen.
         Beschlüsse, mit denen das Statut des Vereins geändert oder der Verein aufgelöst werden soll, bedürfen jedoch einer qualifizierten Mehrheit von zwei Dritteln der abgegebenen gültigen Stimmen.
 
-    \item Den Vorsitz in der Generalversammlung führt der/die Obmann/\\Obfrau, in dessen/deren Verhinderung sein/e/ihr/e Stellvertreter/in.
+    \item Den Vorsitz in der Generalversammlung führt der/die Obmann/Obfrau, in dessen/deren Verhinderung sein/e/ihr/e Stellvertreter/in.
         Wenn auch diese/r verhindert ist, so führt das an Jahren älteste anwesende Vorstandsmitglied den Vorsitz.
 \end{enumerate}
 
-\section*{\S\ 12 Aufgaben der Generalversammlung}
+\statutensection{12 Aufgaben der Generalversammlung}
 
 Der Generalversammlung sind folgende Aufgaben vorbehalten:
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Beschlussfassung über den Voranschlag.
 
     \item Entgegennahme und Genehmigung des Rechenschaftsberichts und des Rechnungsabschlusses unter Einbindung der Rechnungsprüfer.
@@ -229,9 +248,9 @@ Der Generalversammlung sind folgende Aufgaben vorbehalten:
     \item Beratung und Beschlussfassung über sonstige auf der Tagesordnung stehende Fragen.
 \end{enumerate}
 
-\section*{\S\ 13 Vorstand}
+\statutensection{13 Vorstand}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Der Vorstand besteht aus sechs Mitgliedern, und zwar aus Obmann/Obfrau und Stellvertreter/in, Schriftführer/in und Stellvertreter/in sowie Kassier/in und Stellvertreter/in.
 
     \item Der Vorstand wird von der Generalversammlung gewählt.
@@ -264,13 +283,13 @@ Der Generalversammlung sind folgende Aufgaben vorbehalten:
         Der Rücktritt wird erst mit Wahl bzw Kooptierung (Abs.\ 2) eines Nachfolgers wirksam.
 \end{enumerate}
 
-\section*{\S\ 14 Aufgaben des Vorstands}
+\statutensection{14 Aufgaben des Vorstands}
 
 Dem Vorstand obliegt die Vertretung der Vereins gegenüber der Öffentlichkeit und die Exekution der, durch die Vollversammlung getroffenen, Entschlüsse.
 Ihm kommen alle Aufgaben zu, die nicht durch die Statuten einem anderen Vereinsorgan zugewiesen sind.
 In seinen Wirkungsbereich fallen insbesondere folgende Angelegenheiten:
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Einrichtung eines den Anforderungen des Vereins entsprechenden Rechnungswesens mit laufender Aufzeichnung der Einnahmen/Ausgaben und Führung eines Vermögensverzeichnisses als Mindesterfordernis.
 
     \item Erstellung des Jahresvoranschlags, des Rechenschaftsberichts und des Rechnungsabschlusses.
@@ -284,9 +303,9 @@ In seinen Wirkungsbereich fallen insbesondere folgende Angelegenheiten:
     \item Aufnahme und Kündigung von Angestellten des Vereins.
 \end{enumerate}
 
-\section*{\S\ 15 Besondere Obliegenheiten einzelner Vorstandsmitglieder}
+\statutensection{15 Besondere Obliegenheiten einzelner Vorstandsmitglieder}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Der/die Obmann/Obfrau führt die laufenden Geschäfte des Vereins.
         Der/die Schriftführer/in unterstützt den/die Obmann/Obfrau bei der Führung der Vereinsgeschäfte.
 
@@ -306,12 +325,12 @@ In seinen Wirkungsbereich fallen insbesondere folgende Angelegenheiten:
 
     \item Der/die Kassier/in ist für die ordnungsgemäße Geldgebarung des Vereins verantwortlich.
 
-    \item Im Fall der Verhinderung treten an die Stelle des/der Obmanns/\\Obfrau, des Schriftführers/der Schriftführerin oder des Kassiers/der Kassierin ihre Stellvertreter/innen.
+    \item Im Fall der Verhinderung treten an die Stelle des/der Obmanns/Obfrau, des Schriftführers/der Schriftführerin oder des Kassiers/der Kassierin ihre Stellvertreter/innen.
 \end{enumerate}
 
-\section*{\S\ 16 Rechnungsprüfer/in}
+\statutensection{16 Rechnungsprüfer/in}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Zwei Rechnungsprüfer/innen werden von der Generalversammlung auf die Dauer von 1 Jahr gewählt.
         Wiederwahl ist möglich.
         Die Rechnungsprüfer/innen dürfen keinem Organ -- mit Ausnahme der Generalversammlung und der Vollversammlung -- angehören, dessen Tätigkeit Gegenstand der Prüfung ist.
@@ -324,9 +343,9 @@ In seinen Wirkungsbereich fallen insbesondere folgende Angelegenheiten:
         Im Übrigen gelten für die Rechnungsprüfer/innen die Bestimmungen des \S\ 13 Abs.\ 8 bis 10 sinngemäß.
 \end{enumerate}
 
-\section*{\S\ 17 Schiedsgericht}
+\statutensection{17 Schiedsgericht}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Zur Schlichtung von allen aus dem Vereinsverhältnis entstehenden Streitigkeiten ist das vereinsinterne Schiedsgericht berufen.
         Es ist eine „Schlichtungseinrichtung“ im Sinne des Vereinsgesetzes 2002 und kein Schiedsgericht nach den \S\S\ 577 ff ZPO.
 
@@ -342,9 +361,9 @@ In seinen Wirkungsbereich fallen insbesondere folgende Angelegenheiten:
         Seine Entscheidungen sind vereinsintern endgültig.
 \end{enumerate}
 
-\section*{\S\ 18 Freiwillige Auflösung des Vereins}
+\statutensection{18 Freiwillige Auflösung des Vereins}
 
-\begin{enumerate}
+\begin{enumerate}[statutenenum]
     \item Die freiwillige Aufösung des Vereins kann nur in einer Generalversammlung und nur mit Zweidrittelmehrheit der abgegebenen gültigen Stimmen beschlossen werden.
 
     \item Diese Generalversammlung hat auch -- sofern Vereinsvermögen vorhanden ist -- über die Abwicklung zu beschließen.
