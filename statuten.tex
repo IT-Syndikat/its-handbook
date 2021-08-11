@@ -1,0 +1,76 @@
+\documentclass[a4paper,DIV=15,parskip=full,10pt]{scrartcl}
+
+\usepackage{scrletter}
+
+% Fixes
+\usepackage{scrhack}
+\usepackage[utf8]{inputenc}
+\usepackage[main=naustrian]{babel}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{afterpage}
+
+% Use a Sans font family by default
+\renewcommand*{\familydefault}{\sfdefault}
+
+\KOMAoptions{foldmarks=off,fromlogo=true,fromemail=true,subject=titled}
+
+\setkomavar{fromname}{Verein zur Förderung des freien Zugangs zu technischer Fort- und Weiterbildung jeglicher Art\\ZVR-Nr.: 553029636}
+\setkomavar{fromaddress}{Tschamlerstraße 3\\6020 Innsbruck}
+\setkomavar{backaddress}{%
+  IT-Syndikat c/o Cunst \& Co\\
+  \usekomavar{fromaddress}}
+\setkomavar{fromemail}{\texttt{wir@it-syndikat.org}}
+
+% Make the signature look like normal text, not this weird indented spaced
+% mess for hand signing.
+\setplength{sigindent}{0mm}
+\setplength{sigbeforevskip}{0mm}
+\renewcommand\raggedsignature{\raggedright}
+
+
+\setkomavar{subject}{Anzeige der Statutenänderung}
+
+\setkomavar{fromlogo}{\includegraphics[height=20mm]{gfx/its_logo.pdf}}
+\begin{document}
+
+\begin{letter}{Landespolizeidirektion Tirol Sicherheits- und Verwaltungspolizeiliche Abteilung (SVA)\\6020 Innsbruck\\Kaiserjägerstraße 8}
+  \opening{Sehr geehrte Damen und Herren,}
+
+  Hiermit zeigen wir ihnen die Änderung der Statuten des \textit{Vereins
+    zur Förderung des freien Zugangs zu technischer Fort- und Weiterbildung
+    jeglicher Art}\footnote{ZVR-Nr. siehe Absender} an.
+
+  Wir bestätigen dass die angehängten Statuten von der Statutenmäßigen
+  Generalversammlung des Vereins am 6. Juli 2021 so beschlossen wurden.
+
+\setkomavar*{enclseparator}{Beilage}
+\encl{Exemplar der neuen Statuten}
+
+\setkomavar{signature}{%
+\vspace{2em}
+
+Daniel Plank, Obmann
+
+\vspace{4em}
+Roland Obermayer, Schriftführer und
+
+\vspace{4em}
+Daniel Gröber, Kassier.
+}
+\closing{Unterzeichnet,}
+
+\afterpage{\null\thispagestyle{empty}\addtocounter{page}{-1}\newpage}
+
+\setcounter{page}{0}
+\newpage
+\texttt{----BEGIN OF TRANSMISSION----}
+
+\input{content/statuten}
+
+\vspace{1em}
+\texttt{----END OF TRANSMISSION----}
+
+\end{letter}
+
+\end{document}

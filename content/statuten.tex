@@ -1,14 +1,14 @@
 % TODO check for copy-paste errors
 % TODO (?) improve typography
-
+%
 % Adjust the spacing values in the following definitions to fit the content on as few pages as possible.
-
+%
 \newcommand{\statutensection}[1]{%
-    \vspace{-2em}%
+    \vspace{-0.1em}%
     \section*{\small \S{} #1}%
-    \vspace{-1em}%
+    \vspace{-0.5em}%
 }
-
+%
 \SetEnumitemKey{statutenenum}{
     topsep=-0.8em,
     partopsep=0.2em,
@@ -17,15 +17,22 @@
     leftmargin=2em,
     labelsep=0.3em,
 }
-
+%
+\ifdefined \chapter
 \chapter{Statuten}
 \label{cha:statuten}
 
 This chapter of the handbook is not translated in order to prevent mistranslations.
 
-\begin{otherlanguage}{german}
-
 \fontfamily{ptm}\selectfont\tiny
+\else
+\begin{center}
+\large{IT-Syndikat: Statuten}
+\end{center}
+\vspace{-2em}
+\fi
+
+\begin{otherlanguage}{naustrian}
 
 \statutensection{1 Name, Sitz und Tätigkeitsbereich}
 
